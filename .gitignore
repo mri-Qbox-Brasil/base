@@ -1,23 +1,41 @@
-\db
-\cache
-\[fiveguard]
+# runtime
+/cache/
+/logs/
+/crashes/
+/txData/
 
-#extensions
+# databases
+/db/
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# archives
 *.zip
 *.rar
 *.7z
-*.bkp
-.yarn*
-.temp
-*.lock
-.replxx*
-.vscode
-*.md
-*.log
+*.tar
 *.tgz
 
-#files
-LICENSE
-.github
-node_modules
-.git
+# backups
+*.bkp
+*.bak
+*.old
+
+# node
+node_modules/
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+
+# temp
+.temp/
+*.tmp
+
+# paid resources
+/[fiveguard]/
+
+# git
+.git/
